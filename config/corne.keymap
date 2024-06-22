@@ -28,16 +28,16 @@
     };
                 lower_layer {
 // -------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3  |  4  |  5  |      |  6  |  7  |  8  |  9  |  0  |  -  |
-// | SHFT  | prev | Vol^ | Volv | next | pause |      | home | pgdn | pgup | end |      |
-// | BTCLR |      |      |      |      |       |      |      |      |      |  \  |      |
+// |  ESC  |  1   |  2   |  3   |  4   |   5   |  6   |  7   |  8   |  9   |  0  |  -  |
+// | SHFT  | prev | Vol^ | Volv | next | pause |      | home | pgdn | pgup | end |     |
+// |       |      |      |      |      | BTCLR |      |      |      |      |  \  |     |
 //                       | GUI  |      |  SPC  |      | ENT  |      | DEL  |
                         display-name = "Lower";
                         bindings = <
-            &kp ESCAPE  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5             &kp N6    &kp N7    &kp N8        &kp N9      &kp N0        &kp MINUS
-            &kp LSHFT   &kp C_PREV    &kp C_VOL_UP  &kp C_VOL_DN  &kp C_NEXT    &kp C_PP           &trans    &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END       &trans
-            &trans      &bt BT_SEL 0  &bt BT_SEL 1  &kp BSPC      &kp DEL       &kp BT_CLR         &trans    &trans    &trans        &trans      &kp BACKSLASH &trans
-                                                    &trans        &trans        &kp SPACE          &kp RET   &trans    &kp DEL
+            &kp ESC  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5             &kp N6    &kp N7    &kp N8        &kp N9      &kp N0        &kp MINUS
+            &trans   &kp C_PREV    &kp C_VOL_UP  &kp C_VOL_DN  &kp C_NEXT    &kp C_PP           &trans    &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END       &trans
+            &trans   &bt BT_SEL 0  &bt BT_SEL 1  &kp BSPC      &kp DEL       &kp BT_CLR         &trans    &trans    &trans        &trans      &kp BACKSLASH &trans
+                                                 &trans        &trans        &kp SPACE          &kp RET   &trans    &kp DEL
                         >;
                 };
                 raise_layer {
@@ -48,9 +48,9 @@
 //                       | GUI  |      | SPC  |      | ENT  |      |      |
                         display-name = "Raise";
                         bindings = <
-            &kp GRAVE   &kp F1     &kp F2      &kp F3     &kp F4     &kp F5        &kp F6    &kp F7    &kp F8      &kp F9    &kp F10  &kp RBKT
-            &kp LSHFT   &trans     &trans      &trans     &trans     &trans        &trans    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp K_CONTEXT_MENU
-            &kp LCTRL   &trans     &trans      &trans     &kp F11    &kp F12       &trans    &trans    &trans      &trans    &trans   &trans
+            &kp GRAVE   &kp F1     &kp F2      &kp F3     &kp F4     &kp F5        &kp F6    &kp F7    &kp F8      &kp F9    &kp F10   &kp RBKT
+            &trans      &trans     &trans      &trans     &trans     &trans        &trans    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp K_CONTEXT_MENU
+            &trans      &trans     &trans      &trans     &kp F11    &kp F12       &trans    &trans    &trans      &trans    &trans    &trans
                                                &kp LGUI  &trans    &kp SPACE       &kp RET   &trans    &trans
                         >;
                 };

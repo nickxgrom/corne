@@ -44,13 +44,13 @@
 // -------------------------------------------------------------------------------------------
 // |   `   |  F1  |  F2  |  F3  |  F4  |  F5  |      |  F6  |  F7  |  F8  |  F9  |  F10  |  ]  |
 // | SHFT  |      |      |      |      |      |      |      |  <-  |   v  |  ^   |  ->   | ctx |
-// | CTRL  |      |      |      | F11  | F12  |      |      |      |      |      |      |
-//                       | GUI  |      | SPC  |      | ENT  |      |      |
+// | CTRL  |      |      |      |      |      |      |      |      |      |      |  F11  | F12 |
+//                       |      |      | SPC  |      | ENT  |      |      |
                         display-name = "Raise";
                         bindings = <
             &kp GRAVE   &kp F1     &kp F2      &kp F3     &kp F4     &kp F5        &kp F6    &kp F7    &kp F8      &kp F9    &kp F10   &kp RBKT
             &trans      &trans     &trans      &trans     &trans     &trans        &trans    &kp LEFT  &kp DOWN    &kp UP    &kp RIGHT &kp K_CONTEXT_MENU
-            &trans      &trans     &trans      &trans     &kp F11    &kp F12       &trans    &trans    &trans      &trans    &trans    &trans
+            &trans      &trans     &trans      &trans     &trans     &trans        &trans    &trans    &trans      &trans    &kp F11   &kp F12
                                                &trans     &trans     &kp LGUI      &kp RET   &trans    &trans
                         >;
                 };
